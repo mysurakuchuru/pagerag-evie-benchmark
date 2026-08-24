@@ -1,0 +1,29 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+
+# Local caches
+.cache/
+
+# Downloaded/raw dataset files
+data/*
+!data/.gitkeep
+
+# Large model weights
+*.pt
+*.pth
+*.safetensors
