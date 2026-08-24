@@ -1,0 +1,2 @@
+model,pages,queries,hit_at_1,hit_at_5,hit_at_10,recall_at_5,recall_at_10,ndcg_at_5,ndcg_at_10,mrr,avg_query_latency_seconds,indexing_time_seconds,index_size_mb
+BGE-M3-dense,100,10,0.400,0.500,0.600,0.433,0.567,0.379,0.432,0.490,0.1954,405.05,0.39

@@ -1,0 +1,11 @@
+query_id,query,first_relevant_rank,hit_at_1,hit_at_5,hit_at_10,recall_at_5,recall_at_10,ndcg_at_5,ndcg_at_10,reciprocal_rank,query_latency_seconds
+0,Did JPMorganChase execute more than half of its planned $30 billion stock repurchase program by year-end?,17,0,0,0,0.0,0.0,0.0,0.0,0.058823529411764705,0.1785185620028642
+42,JPMorgan Chase supplementary leverage ratio 2024,11,0,0,0,0.0,0.0,0.0,0.0,0.09090909090909091,0.17230060199653963
+59,Is JPMorgan Chase's 2024 CET1 ratio higher than Bank of America's stress capital buffer percentage?,1,1,1,1,1.0,1.0,0.9197207891481876,0.9197207891481876,1.0,0.19682670699694427
+60,Extract the firm's Common Equity Tier 1 (CET1) capital ratio as part of its strategic priorities under Basel III requirements.,2,0,1,1,0.6666666666666666,1.0,0.4776237035032179,0.6447841584694202,0.5,0.204194040998118
+63,How might a visual comparison of credit loss allowance trends between the two banks illustrate differences in their approaches to credit risk provisioning?,14,0,0,0,0.0,0.0,0.0,0.0,0.07142857142857142,0.2169939119994524
+67,Extract the Common Equity Tier 1 capital ratio reported by JPMorgan Chase.,6,0,0,1,0.0,1.0,0.0,0.3562071871080222,0.16666666666666666,0.18308953200175893
+68,Explain how the reorganization of JPMorgan's business segments in 2024 aligns with its strategic goals for operational efficiency and capital management.,61,0,0,0,0.0,0.0,0.0,0.0,0.01639344262295082,0.2126728910006932
+122,How much did the amount of JP Morgan Chase's total asset management fee increase from 2023 to 2024?,1,1,1,1,1.0,1.0,1.0,1.0,1.0,0.20630002499819966
+143,What was the amount of share repurchases in JPMorgan Chase in 2024?,1,1,1,1,0.6666666666666666,0.6666666666666666,0.39480936517049525,0.39480936517049525,1.0,0.1839157799986424
+161,How much was the amount of JPMorgan Chase's total investment banking fees increase between 2023 and 2024?,1,1,1,1,1.0,1.0,1.0,1.0,1.0,0.19933883199701086
