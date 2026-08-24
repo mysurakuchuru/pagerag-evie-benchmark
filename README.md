@@ -105,18 +105,23 @@ Late-interaction scoring
 
 The BGE-M3 baseline uses markdown text supplied by ViDoRe. It is therefore a text-retrieval baseline, not an OCR benchmark.
 
+
 ## Runtime environment
 
-BGE-M3 was evaluated locally on an Intel MacBook Pro CPU. EVIE was evaluated on a Google Colab NVIDIA Tesla T4 using FP16 and eager attention.
+Both models were evaluated on a Google Colab NVIDIA Tesla T4 for the controlled runtime comparison.
 
-| Model | Avg. query latency | Index size |
-|---|---:|---:|
-| BGE-M3 | 0.1954 s | 0.39 MB |
-| EVIE-Preview-4.5B | 1.0189 s | 18.43 MB |
+| Model | Avg. query latency | Indexing time | Index size |
+|---|---:|---:|---:|
+| BGE-M3 | 0.0267 s | 27.04 s | 0.39 MB |
+| EVIE-Preview-4.5B | 1.0189 s | Not recorded | 18.43 MB |
 
-The latency numbers are **not directly comparable** because the models were run on different hardware. A same-hardware benchmark is needed before drawing conclusions about speed.
+BGE-M3 reproduced the same retrieval-quality metrics on the T4 as the original local baseline.
 
-EVIE's 100-page indexing time was not recorded, so it is intentionally left out rather than estimated.
+In this implementation, BGE-M3 had substantially lower measured query latency. However, the EVIE retrieval loop is not optimized in the same way: page representations were stored on CPU and scored sequentially with CPU-to-GPU transfers. The latency numbers should therefore be treated as measured implementation performance rather than a definitive model-speed comparison.
+
+EVIE's 100-page indexing time was not recorded and is intentionally left unestimated.
+
+
 
 ## Repository structure
 
@@ -160,7 +165,7 @@ The EVIE Colab workflow is available in:
 
 This is an initial experiment using 10 queries and a 100-page candidate corpus from one English financial dataset.
 
-The current text baseline uses ViDoRe-provided markdown rather than OCR output. The runtime measurements were also collected on different hardware.
+The current text baseline uses ViDoRe-provided markdown rather than OCR output. Both runtime measurements now use a Tesla T4, but the BGE-M3 and EVIE retrieval implementations are not equally optimized.
 
 The results should therefore be treated as evidence from this sampled benchmark, not as a general claim that EVIE will outperform BGE-M3 on every document collection.
 
