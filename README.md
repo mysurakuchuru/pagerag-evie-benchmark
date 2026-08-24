@@ -1,4 +1,3 @@
-cat > README.md <<'EOF'
 # PageRAG: EVIE vs BGE-M3 for Financial PDF Retrieval
 
 This project compares two approaches to page-level document retrieval:
