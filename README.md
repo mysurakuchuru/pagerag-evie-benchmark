@@ -35,6 +35,8 @@ This is a **100-page sampled-corpus experiment**, not an official full ViDoRe le
 
 ## Results
 
+![Retrieval quality comparison](results/retrieval_quality_comparison.png)
+
 | Metric | BGE-M3 Dense | EVIE-Preview-4.5B |
 |---|---:|---:|
 | Hit@1 | 0.400 | **0.700** |
