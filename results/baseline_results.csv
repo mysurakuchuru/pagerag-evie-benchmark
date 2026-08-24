@@ -1,0 +1,2 @@
+experiment,model,num_pages,query_id,ground_truth_corpus_id,ground_truth_rank,hit_at_1,hit_at_5,hit_at_10,hit_at_20
+finance_sample_001,BGE-M3-dense,100,0,10,17,0,0,0,1
