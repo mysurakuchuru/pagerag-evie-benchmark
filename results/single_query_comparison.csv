@@ -1,0 +1,3 @@
+experiment,query_id,query,model,num_pages,ground_truth_corpus_id,ground_truth_rank
+finance_single_query,0,"Did JPMorganChase execute more than half of its planned $30 billion stock repurchase program by year-end?",BGE-M3-dense,100,10,17
+finance_single_query,0,"Did JPMorganChase execute more than half of its planned $30 billion stock repurchase program by year-end?",EVIE-Preview-4.5B,100,10,1
