@@ -110,6 +110,8 @@ The BGE-M3 baseline uses markdown text supplied by ViDoRe. It is therefore a tex
 
 Both models were evaluated on a Google Colab NVIDIA Tesla T4 for the controlled runtime comparison.
 
+![T4 query latency comparison](results/t4_query_latency_comparison.png)
+
 | Model | Avg. query latency | Indexing time | Index size |
 |---|---:|---:|---:|
 | BGE-M3 | 0.0267 s | 27.04 s | 0.39 MB |
